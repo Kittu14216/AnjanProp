@@ -1,0 +1,59 @@
+/* About Us Section Styling */
+.about-us-section {
+  padding: 40px 20px;
+  text-align: center;
+  background-color: rgba(
+    20,
+    27,
+    39,
+    0.5
+  ); /* Light background for the section */
+}
+
+.about-us-heading {
+  font-size: 2rem;
+  font-weight: bolder;
+  color: #100f1d;
+
+  background-color: #ffffff; /* Navigation style background color */
+  padding: 8px 500px; /* Padding for the heading */
+  border-radius: 8px; /* Rounded corners */
+  display: inline-block; /* Center the heading */
+  margin: 50px 0px; /* Space below the heading */
+}
+
+/* Container for About Us Info */
+.about-us-container {
+  display: flex;
+  justify-content: center; /* Center the box horizontally */
+}
+
+/* Single About Us Box */
+.about-us-box {
+  background-color: #fff;
+  padding: 30px; /* Padding for the box */
+  border-radius: 8px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  max-width: 600px; /* Maximum width for the box */
+  width: 100%; /* Full width for responsiveness */
+}
+
+/* Individual About Info Item */
+.about-info-item {
+  font-size: 1rem;
+  color: #2d2020; /* Text color */
+  margin: 10px 0; /* Space between each item */
+}
+
+/* Media Queries */
+
+/* For mobile devices (width less than 768px) */
+@media (max-width: 768px) {
+  .about-us-heading {
+    font-size: 1.5rem; /* Slightly smaller font for mobile */
+  }
+
+  .about-us-box {
+    padding: 20px; /* Reduce padding for smaller screens */
+  }
+}

@@ -1,0 +1,132 @@
+/* General container styling */
+.contact-us-section {
+  padding: 40px 20px;
+  background-color: rgba(20, 27, 39, 0.5);
+}
+.contact-us-section .contact-heading {
+  text-transform: capitalize;
+  background-color: white;
+  color: black;
+  font-weight: bold;
+  border-radius: 5px;
+  margin: 40px 0px;
+  padding: 8px;
+}
+.contact-us-container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  gap: 20px;
+  align-items: stretch; /* Ensure both columns stretch to the same height */
+}
+
+/* Map Column */
+.map-column {
+  flex: 1 1 50%; /* Takes up 50% of the width */
+  height: 100%; /* Allows it to take the full height of the container */
+}
+
+/* Form Column */
+.form-column {
+  flex: 1 1 40%; /* Takes up 40% of the width */
+  background-color: #fff;
+  padding: 10px;
+  /* max-height: 500px; */
+  border-radius: 8px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+/* Heading Styling */
+.contact-heading {
+  font-size: 1.8rem; /* Larger heading size */
+  color: #007bff; /* Blue color for the heading */
+  margin: 15px; /* Space below the heading */
+  text-align: center; /* Center align the heading */
+  text-transform: uppercase; /* Uppercase letters */
+  letter-spacing: 1px; /* Letter spacing for style */
+}
+
+/* Form Elements */
+.feedback-form {
+  font-weight: bold;
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+}
+
+.feedback-form label {
+  font-size: 1rem;
+  color: #333;
+}
+
+.feedback-form input,
+.feedback-form textarea {
+  padding: 10px;
+  border-radius: 5px;
+  border: 1px solid #ccc;
+  font-size: 1rem;
+}
+
+.feedback-form textarea {
+  resize: vertical;
+  min-height: 120px;
+}
+
+.submit-button {
+  background-color: #007bff;
+  color: #fff;
+  border: none;
+  padding: 10px 15px;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background-color 0.3s;
+}
+
+.submit-button:hover {
+  background-color: #0056b3;
+}
+
+/* Media Queries */
+
+/* For tablets (width less than 1024px) */
+@media (max-width: 1024px) {
+  .map-column {
+    flex: 1 1 100%; /* Full width for map */
+    height: 300px;
+  }
+
+  .form-column {
+    flex: 1 1 100%; /* Full width for form */
+  }
+}
+
+/* For mobile devices (width less than 768px) */
+@media (max-width: 768px) {
+  .map-column {
+    height: 250px; /* Smaller height for map */
+  }
+
+  .form-column {
+    padding: 15px; /* Reduce padding for smaller screens */
+  }
+}
+
+/* For small mobile devices (width less than 480px) */
+@media (max-width: 480px) {
+  .map-column {
+    height: 200px;
+  }
+
+  .feedback-form label {
+    font-size: 0.9rem; /* Slightly smaller font for mobile */
+  }
+
+  .feedback-form input,
+  .feedback-form textarea {
+    font-size: 0.9rem; /* Smaller input font for mobile */
+  }
+
+  .submit-button {
+    padding: 8px 12px; /* Smaller padding for mobile button */
+  }
+}

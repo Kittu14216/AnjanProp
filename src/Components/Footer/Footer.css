@@ -1,0 +1,67 @@
+.footer-container {
+  background-color: rgb(19, 19, 37);
+}
+.footer-container p {
+  color: white;
+}
+.footer-container p a {
+  text-decoration: none;
+}
+.footer-services-container {
+  display: flex; /* Use flexbox to create two columns */
+  gap: 20px;
+  /* Space between the two service columns */
+}
+
+.footer-services-column {
+  flex: 1; /* Each service column takes equal width */
+}
+
+.footer-services-column h3 {
+  font-size: 1.2rem; /* Adjust heading size for service sections */
+  margin-top: 15px;
+  /* Space above the heading */
+  margin-bottom: 10px; /* Space below the heading */
+}
+
+.footer-services-column ul {
+  list-style-type: none; /* Remove default list styling */
+  padding: 0; /* Remove padding */
+}
+
+.footer-services-column li {
+  font-size: 1rem; /* Adjust list item font size */
+  margin: 5px 0; /* Space between list items */
+  color: white;
+}
+
+.footer-heading {
+  font-size: 1.8rem; /* Increase font size for main heading */
+  /* margin-bottom: 15px; */
+  background-color: #edeff1; /* Blue background */
+  font-weight: bold;
+  color: #1a0a0a; /* White text color */
+  padding: 8px 15px; /* Padding around the heading */
+  border-radius: 5px; /* Rounded corners */
+  text-align: center; /* Center the text */
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2); /* Subtle shadow effect */
+}
+
+.footer-services-column h3 {
+  font-size: 1.5rem; /* Increase font size for service section headings */
+  margin-top: 15px;
+  margin-bottom: 10px;
+  background-color: #205f41; /* Green background */
+  color: #fff7f7; /* White text color */
+  padding: 8px; /* Padding around the heading */
+  border-radius: 5px; /* Rounded corners */
+  text-align: center; /* Center the text */
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2); /* Subtle shadow effect */
+}
+
+/* Media Queries */
+@media (max-width: 768px) {
+  .footer-services-container {
+    flex-direction: column; /* Stack service columns on smaller screens */
+  }
+}

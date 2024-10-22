@@ -1,0 +1,13 @@
+@media (max-width: 1170px) {
+  nav-link {
+    margin-left: 20px;
+  }
+  #home {
+    margin-left: 30px;
+  }
+}
+
+.nav-link a {
+  text-decoration: none; /* Removes the underline */
+  color: inherit; /* Ensures the link color matches the parent element */
+}

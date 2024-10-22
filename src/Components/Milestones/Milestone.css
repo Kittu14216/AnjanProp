@@ -1,0 +1,89 @@
+/* Milestones Section Styling */
+.milestones-section {
+  padding: 40px 20px;
+  text-align: center;
+  background-color: rgba(
+    20,
+    27,
+    39,
+    0.5
+  ); /* Light background for the section */
+}
+
+.milestones-heading {
+  font-size: 2rem;
+  font-weight: bold;
+  color: #0b0a13;
+  background-color: #fcfeff; /* Navigation style background color */
+  padding: 15px 20px; /* Padding for the heading */
+  border-radius: 8px; /* Rounded corners */
+  display: inline-block; /* Center the heading */
+  margin-bottom: 20px; /* Space below the heading */
+}
+
+/* Container for Milestones */
+.milestones-container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 20px;
+}
+
+/* Individual Milestone Box */
+.milestone-box {
+  background-color: #111d60;
+  padding: 20px;
+  border-radius: 8px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  flex: 1 1 calc(33.33% - 40px); /* 3 columns for larger screens */
+  min-width: 250px; /* Minimum box width */
+  max-width: 300px; /* Maximum box width */
+  transition: transform 0.3s;
+}
+
+.milestone-box:hover {
+  transform: scale(1.05);
+}
+
+.milestone-year {
+  font-size: 1.5rem;
+  font-weight: bold;
+  color: #cdcfd2; /* Color for the year */
+}
+
+.milestone-description {
+  font-size: 1rem;
+  color: #d2d0d0;
+  margin-top: 10px;
+}
+
+/* Media Queries */
+
+/* For tablets (width less than 1024px) */
+@media (max-width: 1024px) {
+  .milestone-box {
+    flex: 1 1 calc(50% - 40px); /* 2 columns on tablets */
+  }
+}
+
+/* For mobile devices (width less than 768px) */
+@media (max-width: 768px) {
+  .milestone-box {
+    flex: 1 1 calc(100% - 40px); /* 1 column on mobile */
+  }
+}
+
+/* For small mobile devices (width less than 480px) */
+@media (max-width: 480px) {
+  .milestone-box {
+    padding: 15px; /* Reduce padding for smaller screens */
+  }
+
+  .milestones-heading {
+    font-size: 1.5rem; /* Slightly smaller font for mobile */
+  }
+
+  .milestone-year {
+    font-size: 1.2rem; /* Slightly smaller font for mobile */
+  }
+}

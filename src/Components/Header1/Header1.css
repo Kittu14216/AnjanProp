@@ -1,0 +1,150 @@
+/* General header styling */
+.header {
+  background: url("../../../public/header.jpg") no-repeat center center;
+  width: 100vw;
+  height: 85vh; /* Full viewport height */
+  background-size: cover; /* Ensure the image covers the full container */
+  position: relative; /* Necessary for positioning the content */
+  margin-top: 65px;
+  /* background-color: rgba(31, 37, 46, 0.5); */
+  background-color: rgba(20, 27, 39, 0.5);
+}
+
+/* Header content styling */
+.header-content {
+  position: absolute;
+  bottom: 10%; /* Adjust position from the bottom */
+  left: 10%; /* Adjust from the left */
+  color: white; /* Text color */
+  max-width: 60%; /* Limit content width */
+  display: flex;
+  flex-direction: column;
+  gap: 1rem; /* Spacing between elements */
+}
+
+/* Main heading */
+.main-heading {
+  font-size: 3rem; /* Large font for desktop */
+  font-weight: bold;
+  color: rgb(191, 68, 11);
+}
+
+/* Subheading */
+.sub-heading {
+  font-size: 2rem;
+  font-weight: normal;
+}
+
+/* Small paragraph */
+.small-paragraph {
+  font-size: 1.2rem;
+  line-height: 1.5;
+  max-width: 80%;
+}
+
+/* Button styling (optional) */
+/* .header-content button {
+  border: none;
+  padding: 10px 20px;
+  font-size: 1rem;
+  font-weight: bold;
+  color: white;
+  background-color: #007bff;
+  border-radius: 50px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+} */
+
+/* .header-content button:hover {
+  background-color: #0056b3;
+} */
+
+/* Media Queries for Responsive Design */
+
+/* Tablet View (Medium Devices) */
+@media (max-width: 1024px) {
+  .header {
+    height: 60vh; /* Slightly reduced height for tablets */
+  }
+
+  .header-content {
+    max-width: 80%; /* Slightly wider on tablets */
+    bottom: 15%; /* Adjust content position */
+  }
+
+  .main-heading {
+    font-size: 2.5rem; /* Smaller font for tablets */
+  }
+
+  .sub-heading {
+    font-size: 1.8rem; /* Slightly smaller subheading */
+  }
+
+  .small-paragraph {
+    font-size: 1rem; /* Adjust paragraph size for readability */
+  }
+}
+
+/* Mobile View (Small Devices) */
+@media (max-width: 768px) {
+  .header {
+    height: 50vh; /* Smaller height for mobile */
+  }
+
+  .header-content {
+    max-width: 90%; /* Almost full width for mobile */
+    bottom: 20%; /* Adjust position */
+  }
+
+  .main-heading {
+    font-size: 2rem; /* Further reduce heading size */
+  }
+
+  .sub-heading {
+    font-size: 1.5rem; /* Reduce subheading size */
+  }
+
+  .small-paragraph {
+    font-size: 0.9rem; /* Smaller paragraph size */
+    max-width: 100%; /* Full width */
+  }
+}
+
+/* Small Mobile View (Very Small Devices) */
+@media (max-width: 480px) {
+  .header {
+    height: 45vh; /* Even smaller height for very small devices */
+  }
+
+  .header-content {
+    max-width: 95%; /* Almost full width */
+    left: 5%; /* Less margin on the sides */
+    bottom: 25%;
+  }
+
+  .main-heading {
+    font-size: 1.8rem; /* Further reduce heading size */
+  }
+
+  .sub-heading {
+    font-size: 1.2rem; /* Further reduce subheading */
+  }
+
+  .small-paragraph {
+    font-size: 0.8rem; /* Smallest paragraph size */
+  }
+}
+
+/* Optional Fade-in Animation */
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+
+.header-content {
+  animation: fadeIn 2s ease-in-out;
+}
