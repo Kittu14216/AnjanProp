@@ -1,9 +1,9 @@
 import React from "react";
 
-export default function Value() {
+export default function VA() {
   return (
     <div>
-      <h1>valueAnalysis</h1>
+      <h1>Value analysis</h1>
     </div>
   );
 }

@@ -28,12 +28,13 @@ import Advertise from "./Components/ServicePages/Advertise";
 import Budgeting from "./Components/ServicePages/Budgeting";
 import Scheduling from "./Components/ServicePages/Scheduling";
 // import Constructability from "./Components/ServicePages/Constructability"
-import Value from "./Components/ServicePages/value";
+// import Value from "./Components/ServicePages/value";
 import General from "./Components/ServicePages/General";
 import Gas from "./Components/ServicePages/Gas";
 import Water from "./Components/ServicePages/Water";
 import Layout from "./Components/ServicePages/Layout";
 import RiskAnalysis from "./Components/ServicePages/RiskAnalysis";
+import VA from "./Components/ServicePages/VA";
 function App() {
   return (
     <>
@@ -69,7 +70,7 @@ function App() {
           <Route path="/budgeting" element={<Budgeting />} />
           <Route path="/scheduling" element={<Scheduling />} />
           <Route path="/riskAnalysis" element={<RiskAnalysis />} />
-          <Route path="/valueAnalysis" element={<Value />} />
+          <Route path="/valueAnalysis" element={<VA />} />
           <Route path="/generalConstruction" element={<General />} />
           <Route path="/gasPowerInfrastructure" element={<Gas />} />
           <Route path="/waterInfrastructure" element={<Water />} />
