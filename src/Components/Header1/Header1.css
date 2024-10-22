@@ -24,15 +24,32 @@
 
 /* Main heading */
 .main-heading {
-  font-size: 3rem; /* Large font for desktop */
+  /* font-size: 3rem; 
   font-weight: bold;
-  color: rgb(191, 68, 11);
+  color: rgb(191, 68, 11); */
+
+  font-size: 3rem; /* Adjust the size as needed */
+  font-weight: bold; /* Make the font bold */
+  background: linear-gradient(
+    to right,
+    #2c2222,
+    #334162,
+    #161512
+  ); /* Your gradient colors */
+  -webkit-background-clip: text; /* For Safari */
+  background-clip: text; /* Background clip to text */
+  color: transparent; /* Make the text color transparent */
+  text-shadow: 1px 1px 0 rgb(112, 15, 0),
+    /* Light border effect */ -1px -1px 0 rgba(255, 255, 255, 0.5),
+    1px -1px 0 rgba(255, 255, 255, 0.5), -1px 1px 0 rgba(255, 255, 255, 0.5);
 }
 
 /* Subheading */
 .sub-heading {
   font-size: 2rem;
   font-weight: normal;
+  color: rgb(255, 255, 255);
+  font-weight: bolder;
 }
 
 /* Small paragraph */
@@ -40,6 +57,8 @@
   font-size: 1.2rem;
   line-height: 1.5;
   max-width: 80%;
+  font-weight: bold;
+  color: black;
 }
 
 /* Button styling (optional) */

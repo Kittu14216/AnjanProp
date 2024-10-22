@@ -1,13 +1,48 @@
-@media (max-width: 1170px) {
-  nav-link {
-    margin-left: 20px;
-  }
-  #home {
-    margin-left: 30px;
+/* General Styling for Navbar */
+.navbar {
+  background-color: rgba(
+    20,
+    27,
+    39,
+    0.95
+  ); /* Slightly transparent dark background */
+}
+
+/* Styling for navbar items */
+.nav-item {
+  padding: 10px 15px;
+  margin: 0 10px;
+  color: white !important; /* Ensure link text is white */
+  font-size: 18px;
+  font-weight: 500;
+  text-transform: uppercase; /* Make text uppercase for tab-like structure */
+  border-bottom: 3px solid transparent; /* Border for tab effect */
+  transition: all 0.3s ease;
+}
+
+/* Hover and active effects */
+.nav-item:hover,
+.nav-item:focus,
+.nav-item.active {
+  color: #ff6600 !important; /* Active link color */
+  border-bottom: 3px solid #ff6600; /* Tab effect */
+}
+
+/* Responsive adjustments */
+@media (max-width: 1024px) {
+  .nav-item {
+    font-size: 16px; /* Slightly smaller text on tablets */
+    margin: 0 5px;
   }
 }
 
-.nav-link a {
-  text-decoration: none; /* Removes the underline */
-  color: inherit; /* Ensures the link color matches the parent element */
+@media (max-width: 768px) {
+  .navbar {
+    padding: 15px 0; /* Adjust padding for mobile view */
+  }
+
+  .nav-item {
+    padding: 8px 10px;
+    font-size: 14px; /* Smaller text for mobile */
+  }
 }

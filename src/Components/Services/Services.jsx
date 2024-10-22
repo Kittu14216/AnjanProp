@@ -109,9 +109,6 @@ const Services = () => {
             <div className="service-info">
               <h3>{service.title}</h3>
               <p>{service.description}</p>
-              <Link to={service.link} className="service-button">
-                Visit Here
-              </Link>
             </div>
           </div>
         ))}

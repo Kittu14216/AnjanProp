@@ -16,7 +16,7 @@
   color: #100f1d;
 
   background-color: #ffffff; /* Navigation style background color */
-  padding: 8px 500px; /* Padding for the heading */
+  padding: 8px; /* Padding for the heading */
   border-radius: 8px; /* Rounded corners */
   display: inline-block; /* Center the heading */
   margin: 50px 0px; /* Space below the heading */

@@ -20,7 +20,6 @@
 }
 
 .ongoing-details h2 {
-  /* padding: 50px auto; */
   border-radius: 5px;
   padding: 8px;
   text-align: center;
@@ -51,20 +50,65 @@
 
 .ongoing-image img {
   max-width: 100%;
-  height: 75vh; /* Ensure responsiveness */
+  height: 75vh; /* Height for larger screens */
   border-radius: 8px;
 }
 
 /* Media Queries */
 
+/* For tablet devices (width less than 1024px) */
+@media (max-width: 1024px) {
+  .ongoing-details,
+  .ongoing-image {
+    flex: 1 1 100%; /* Full width for tablet view */
+  }
+
+  .ongoing-image {
+    margin-bottom: 20px; /* Add margin between image and other column */
+  }
+
+  .ongoing-image img {
+    height: auto; /* Auto height to maintain aspect ratio */
+    width: 100%; /* Make the image fit horizontally */
+    max-width: 100%; /* Ensure image doesn’t exceed container width */
+  }
+}
+
 /* For mobile devices (width less than 768px) */
 @media (max-width: 768px) {
   .ongoing-details,
   .ongoing-image {
-    flex: 1 1 100%; /* Full width for mobile */
+    flex: 1 1 100%; /* Full width for mobile view */
+  }
+
+  .ongoing-details {
+    margin-bottom: 20px; /* Add space below the details section */
   }
 
   .ongoing-details h2 {
     font-size: 1.5rem; /* Smaller font size for mobile */
+  }
+
+  .ongoing-image {
+    margin-bottom: 20px; /* Add margin between image and other column */
+  }
+
+  .ongoing-image img {
+    height: auto; /* Adjust height to maintain aspect ratio */
+    width: 100%; /* Ensure image fits horizontally in mobile view */
+    max-width: 100%; /* Prevent exceeding container width */
+  }
+}
+
+/* For small mobile devices (width less than 480px) */
+@media (max-width: 480px) {
+  .ongoing-image {
+    margin-bottom: 15px; /* Add margin for small mobile screens */
+  }
+
+  .ongoing-image img {
+    height: auto; /* Maintain aspect ratio */
+    width: 100%; /* Ensure the image fits horizontally on small screens */
+    max-width: 100%; /* Prevent exceeding container width */
   }
 }

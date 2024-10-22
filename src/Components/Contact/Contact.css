@@ -2,7 +2,9 @@
 .contact-us-section {
   padding: 40px 20px;
   background-color: rgba(20, 27, 39, 0.5);
+  overflow: hidden; /* Prevent horizontal scrolling */
 }
+
 .contact-us-section .contact-heading {
   text-transform: capitalize;
   background-color: white;
@@ -12,63 +14,77 @@
   margin: 40px 0px;
   padding: 8px;
 }
+
+/* Contact Us Container */
 .contact-us-container {
   display: flex;
   flex-wrap: wrap;
   justify-content: space-between;
   gap: 20px;
-  align-items: stretch; /* Ensure both columns stretch to the same height */
 }
 
 /* Map Column */
 .map-column {
-  flex: 1 1 50%; /* Takes up 50% of the width */
-  height: 100%; /* Allows it to take the full height of the container */
+  flex: 1 1 50%; /* 50% of the container width */
+  height: 100%; /* Full height */
+}
+
+.map-column iframe {
+  width: 100%; /* Full width */
+  height: 100%; /* Full height */
+  border: none; /* No border */
 }
 
 /* Form Column */
 .form-column {
-  flex: 1 1 40%; /* Takes up 40% of the width */
+  flex: 1 1 40%; /* 40% of the container width */
   background-color: #fff;
-  padding: 10px;
-  /* max-height: 500px; */
+  padding: 20px; /* Increased padding for better form spacing */
   border-radius: 8px;
   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
 }
 
-/* Heading Styling */
+/* Form Heading */
 .contact-heading {
-  font-size: 1.8rem; /* Larger heading size */
-  color: #007bff; /* Blue color for the heading */
-  margin: 15px; /* Space below the heading */
-  text-align: center; /* Center align the heading */
-  text-transform: uppercase; /* Uppercase letters */
-  letter-spacing: 1px; /* Letter spacing for style */
+  font-size: 1.8rem; /* Larger heading */
+  color: #007bff; /* Blue heading */
+  margin: 15px;
+  text-align: center;
+  text-transform: uppercase;
+  letter-spacing: 1px;
 }
 
 /* Form Elements */
 .feedback-form {
-  font-weight: bold;
   display: flex;
   flex-direction: column;
-  gap: 15px;
+  gap: 15px; /* Spacing between form elements */
 }
 
 .feedback-form label {
   font-size: 1rem;
   color: #333;
+  font-weight: bold;
 }
 
 .feedback-form input,
 .feedback-form textarea {
-  padding: 10px;
+  width: 100%; /* Full width for inputs */
+  padding: 12px; /* More padding for better form field appearance */
   border-radius: 5px;
   border: 1px solid #ccc;
   font-size: 1rem;
+  background-color: #f9f9f9; /* Light background for form fields */
+  transition: border-color 0.3s;
+}
+
+.feedback-form input:focus,
+.feedback-form textarea:focus {
+  border-color: #007bff; /* Change border color when focused */
 }
 
 .feedback-form textarea {
-  resize: vertical;
+  resize: vertical; /* Allow vertical resizing */
   min-height: 120px;
 }
 
@@ -76,7 +92,7 @@
   background-color: #007bff;
   color: #fff;
   border: none;
-  padding: 10px 15px;
+  padding: 12px 15px; /* Bigger padding for better button appearance */
   border-radius: 5px;
   cursor: pointer;
   transition: background-color 0.3s;
@@ -91,42 +107,57 @@
 /* For tablets (width less than 1024px) */
 @media (max-width: 1024px) {
   .map-column {
-    flex: 1 1 100%; /* Full width for map */
-    height: 300px;
+    flex: 1 1 100%; /* Full width on smaller screens */
+    height: 300px; /* Adjust map height */
   }
 
   .form-column {
     flex: 1 1 100%; /* Full width for form */
+    padding: 20px; /* Adjust padding for smaller screens */
   }
 }
 
 /* For mobile devices (width less than 768px) */
 @media (max-width: 768px) {
   .map-column {
-    height: 250px; /* Smaller height for map */
+    height: 250px; /* Reduce height for smaller screens */
   }
 
   .form-column {
-    padding: 15px; /* Reduce padding for smaller screens */
+    padding: 15px; /* Reduce padding */
+  }
+
+  .feedback-form label {
+    font-size: 0.95rem; /* Slightly smaller font */
+  }
+
+  .feedback-form input,
+  .feedback-form textarea {
+    padding: 10px; /* Reduce padding for smaller screens */
+    font-size: 0.95rem; /* Smaller input font */
+  }
+
+  .submit-button {
+    padding: 10px 12px; /* Smaller padding for the button */
   }
 }
 
 /* For small mobile devices (width less than 480px) */
 @media (max-width: 480px) {
   .map-column {
-    height: 200px;
+    height: 200px; /* Further reduce map height */
   }
 
   .feedback-form label {
-    font-size: 0.9rem; /* Slightly smaller font for mobile */
+    font-size: 0.9rem; /* Smaller font */
   }
 
   .feedback-form input,
   .feedback-form textarea {
-    font-size: 0.9rem; /* Smaller input font for mobile */
+    font-size: 0.9rem; /* Adjust input font */
   }
 
   .submit-button {
-    padding: 8px 12px; /* Smaller padding for mobile button */
+    padding: 8px 10px; /* Smaller padding for mobile button */
   }
 }

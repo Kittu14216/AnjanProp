@@ -3,21 +3,23 @@ import "./Projects.css"; // Import CSS file
 import { Link } from "react-router-dom";
 
 // Import images from assets folder
-import hyderabadImg from "../../assets/pro_images/charminar.jpg";
+import BreezyMedoes from "../../assets/pro_images/BreezyMedoes.jpg";
+import Iris from "../../assets/pro_images/iris.jpg";
+import Woods from "../../assets/pro_images/Woods-1.jpg";
 
 const ProjectData = [
-  {
-    name: "Anjan Blossom/Banglore",
-    type: "Residential Apartment",
-    image: hyderabadImg,
-    Cost: "8.00CR",
-    Status: "Completed",
-    link: "/hyderabad",
-  },
+  // {
+  //   name: "Anjan Blossom/Banglore",
+  //   type: "Residential Apartment",
+  //   image: hyderabadImg,
+  //   Cost: "8.00CR",
+  //   Status: "Completed",
+  //   link: "/hyderabad",
+  // },
   {
     name: "Anjan Iris/Banglore",
     type: "Residential Apartment",
-    image: hyderabadImg,
+    image: Iris,
     Cost: "10.00CR",
     Status: "Completed",
     link: "/visakhapatnam",
@@ -25,7 +27,7 @@ const ProjectData = [
   {
     name: "Anjan Woods/Banglore",
     type: "Residential Apartment",
-    image: hyderabadImg,
+    image: Woods,
     Cost: "5.00CR",
     Status: "Completed",
     link: "/delhi",
@@ -33,7 +35,7 @@ const ProjectData = [
   {
     name: "Anjan Breezy Meadows",
     type: "Residential Projects",
-    image: hyderabadImg,
+    image: BreezyMedoes,
     Cost: "15.00CR",
     Status: "Completed",
     link: "/amalapuram",
@@ -56,9 +58,9 @@ const Projects = () => {
               <p>{project.type}</p>
               <p>{project.Cost}</p>
               <p>{project.Status}</p>
-              <Link to={project.link} className="visit-button">
+              {/* <Link to={project.link} className="visit-button">
                 Visit Here
-              </Link>
+              </Link> */}
             </div>
           </div>
         ))}

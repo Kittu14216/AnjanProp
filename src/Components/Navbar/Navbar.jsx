@@ -1,42 +1,46 @@
 import Container from "react-bootstrap/Container";
 import Nav from "react-bootstrap/Nav";
 import Navbar from "react-bootstrap/Navbar";
-import NavDropdown from "react-bootstrap/NavDropdown";
 import logo from "../../../public/logo.png";
-import "./Navbar.css";
+import "./Navbar.css"; // Custom CSS for styling
 
 function NavContainer() {
   return (
     <Navbar bg="dark" variant="dark" expand="lg" fixed="top">
       <Container>
-        {/* <Navbar.Brand href="#home">React-Bootstrap</Navbar.Brand> */}
-
+        {/* Brand Logo */}
         <Navbar.Brand href="#logo">
           <img
             src={logo}
-            alt="Logo" // Provide an alt text for accessibility
-            width="135" // Set the width as needed
-            height="35" // Set the height as needed
-            className="d-inline-block align-top" // Align the logo properly
+            alt="Logo"
+            width="135"
+            height="35"
+            className="d-inline-block align-top"
           />
         </Navbar.Brand>
 
-        <Navbar.Toggle aria-controls="basic-navbar-nav" />
-        <Navbar.Collapse id="basic-navbar-nav">
-          <Nav className="me-auto" style={{ fontSize: "20px", padding: "2px" }}>
-            <Nav.Link
-              className="nav-link"
-              style={{ marginLeft: "500px" }}
-              href="#home"
-            >
+        {/* Toggle button for mobile view */}
+        <Navbar.Toggle aria-controls="navbar-nav" />
+
+        {/* Collapsible links */}
+        <Navbar.Collapse id="navbar-nav">
+          <Nav className="ml-auto nav-links">
+            {/* Navbar Links */}
+            <Nav.Link href="#home" className="nav-item">
               Home
             </Nav.Link>
-            <Nav.Link href="#services">Services</Nav.Link>
-
-            <Nav.Link href="#projects">Projects</Nav.Link>
-            <Nav.Link href="#about">About-Us</Nav.Link>
-
-            <Nav.Link href="#contact">Contact</Nav.Link>
+            <Nav.Link href="#services" className="nav-item">
+              Services
+            </Nav.Link>
+            <Nav.Link href="#projects" className="nav-item">
+              Projects
+            </Nav.Link>
+            <Nav.Link href="#about" className="nav-item">
+              About Us
+            </Nav.Link>
+            <Nav.Link href="#contact" className="nav-item">
+              Contact
+            </Nav.Link>
           </Nav>
         </Navbar.Collapse>
       </Container>
