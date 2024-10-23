@@ -1,10 +1,12 @@
+import React from "react";
+import { Link } from "react-router-dom";
 import Container from "react-bootstrap/Container";
 import Nav from "react-bootstrap/Nav";
 import Navbar from "react-bootstrap/Navbar";
 import logo from "../../../public/logo.png";
 import "./Navbar.css"; // Custom CSS for styling
 
-function NavContainer() {
+const NavContainer = () => {
   return (
     <Navbar bg="dark" variant="dark" expand="lg" fixed="top">
       <Container>
@@ -18,10 +20,8 @@ function NavContainer() {
             className="d-inline-block align-top"
           />
         </Navbar.Brand>
-
         {/* Toggle button for mobile view */}
         <Navbar.Toggle aria-controls="navbar-nav" />
-
         {/* Collapsible links */}
         <Navbar.Collapse id="navbar-nav">
           <Nav className="ml-auto nav-links">
@@ -41,11 +41,14 @@ function NavContainer() {
             <Nav.Link href="#contact" className="nav-item">
               Contact
             </Nav.Link>
+            <Link to="/pin" className="nav-item">
+              Admin
+            </Link>
           </Nav>
         </Navbar.Collapse>
       </Container>
     </Navbar>
   );
-}
+};
 
 export default NavContainer;

@@ -106,8 +106,10 @@ const Services = () => {
             <div className="service-image">
               <img src={service.image} alt={service.title} />
             </div>
-            <div className="service-info">
+            <div className="service-overlay">
               <h3>{service.title}</h3>
+            </div>
+            <div className="service-desc">
               <p>{service.description}</p>
             </div>
           </div>

@@ -2,9 +2,16 @@ import "./App.css";
 import Header1 from "./Components/Header1/Header1";
 import NavContainer from "./Components/Navbar/Navbar";
 import Services from "./Components/Services/Services";
+// import AdminPanel from "./Components/AdminPanel/Adminpanel";
+import AddProject from "./Components/Admin/Admin";
+import PinValidation from "./Components/Pin/Pin";
+import AddProjectPage from "./Components/AddProject/AddProject";
+// import RemoveProject from "./Components/Remove/Remove";
 
 import Projects from "./Components/Projects/Projects";
 import Ongoing from "./Components/OngoingProjects/Ongoing";
+import ProjectsList from "./Components/ProjectLIst/ProjectList";
+import ProjectDetail from "./Components/ProjectDisplay/ProjectDetails";
 
 import Spacer from "./Components/Spacer";
 import { BrowserRouter as Router, Route, Routes } from "react-router-dom";
@@ -46,6 +53,7 @@ function App() {
 
                 <Projects />
                 <Ongoing />
+                <ProjectsList />
                 <AboutUs />
                 <Milestones />
                 <VisionMission />
@@ -54,7 +62,14 @@ function App() {
               </div>
             }
           />
+          <Route path="/pin" element={<PinValidation />} />
 
+          <Route path="/project/:id" element={<ProjectDetail />} />
+          {/* <Route path="/Removing" element={<RemoveProject />} /> */}
+          <Route path="/adding" element={<AddProject />} />
+
+          <Route path="/admin" element={<AddProjectPage />} />
+          {/* <Route path="/add-project" element={<AddProjectPage />} /> */}
           <Route path="/planning" element={<Planning />} />
           <Route path="/programmingDesign" element={<ProgramDesign />} />
           <Route path="/finalDesign" element={<Finaldesign />} />

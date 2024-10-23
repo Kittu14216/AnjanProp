@@ -1,0 +1,49 @@
+/* General body styling */
+body {
+  margin: 0;
+  padding: 0;
+  font-family: "Arial", sans-serif;
+  background-color: rgb(34, 34, 60);
+}
+
+/* Container styling */
+.admin-container {
+  background-color: white;
+  padding: 40px;
+  border-radius: 10px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  max-width: 800px;
+  margin: 40px auto;
+  text-align: center;
+}
+
+/* Heading styling */
+.heading {
+  font-size: 2rem;
+  font-weight: bold;
+  color: #333;
+  margin-bottom: 20px;
+}
+
+/* Link styling as tab */
+.tab-link {
+  display: inline-block;
+  padding: 12px 25px;
+  margin-top: 10px;
+  margin-right: 10px;
+  font-size: 1rem;
+  font-weight: 600;
+  color: white;
+  background-color: #007bff;
+  border-radius: 5px;
+  text-transform: uppercase;
+  text-decoration: none;
+  transition: background-color 0.3s, transform 0.3s;
+}
+
+/* Hover and focus effects */
+.tab-link:hover,
+.tab-link:focus {
+  background-color: #0056b3;
+  transform: scale(1.05);
+}

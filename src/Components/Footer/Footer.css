@@ -19,7 +19,7 @@
 
 .footer-services-column h3 {
   font-size: 1.2rem; /* Adjust heading size for service sections */
-  margin-top: 15px;
+  /* margin-top: 15px; */
   /* Space above the heading */
   margin-bottom: 10px; /* Space below the heading */
 }

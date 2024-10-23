@@ -1,19 +1,11 @@
-/* Apply a background image or color to the whole page */
 body {
   margin: 0;
   padding: 0;
-  /* background-color: rgb(59 130 246 / 0.5);  */
-  /* Example background color */
   background-repeat: no-repeat;
   background-size: cover;
   background-position: center;
   font-family: "Arial", sans-serif;
-}
+  background-color: rgb(37, 78, 34) !important;
 
-html,
-body {
   height: 100%;
-}
-body {
-  background-color: rgb(34, 34, 60) !important;
 }

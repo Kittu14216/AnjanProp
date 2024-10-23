@@ -6,6 +6,10 @@
     39,
     0.95
   ); /* Slightly transparent dark background */
+  display: flex;
+  justify-content: space-between; /* Ensures items are evenly spaced */
+  align-items: center; /* Vertically centers items */
+  padding: 10px 20px; /* Adjust as needed */
 }
 
 /* Styling for navbar items */
@@ -13,10 +17,11 @@
   padding: 10px 15px;
   margin: 0 10px;
   color: white !important; /* Ensure link text is white */
-  font-size: 18px;
-  font-weight: 500;
+  font-size: 18px; /* Font size adjusted to normal */
+  font-weight: 500; /* Normal boldness */
   text-transform: uppercase; /* Make text uppercase for tab-like structure */
   border-bottom: 3px solid transparent; /* Border for tab effect */
+  text-decoration: none !important; /* Remove underline */
   transition: all 0.3s ease;
 }
 
@@ -38,11 +43,13 @@
 
 @media (max-width: 768px) {
   .navbar {
+    flex-direction: column; /* Stack items vertically on mobile view */
     padding: 15px 0; /* Adjust padding for mobile view */
   }
 
   .nav-item {
     padding: 8px 10px;
     font-size: 14px; /* Smaller text for mobile */
+    margin: 5px 0; /* Adjust margin for mobile view */
   }
 }

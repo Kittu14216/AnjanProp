@@ -3,6 +3,8 @@
   padding: 40px 20px;
   background-color: rgba(20, 27, 39, 0.5);
   overflow: hidden; /* Prevent horizontal scrolling */
+  /* margin: 40px 0;  */
+  /* Extra margin for spacing */
 }
 
 .contact-us-section .contact-heading {
@@ -11,44 +13,55 @@
   color: black;
   font-weight: bold;
   border-radius: 5px;
-  margin: 40px 0px;
+  margin: 40px 0;
   padding: 8px;
 }
 
 /* Contact Us Container */
 .contact-us-container {
   display: flex;
-  flex-wrap: wrap;
   justify-content: space-between;
-  gap: 20px;
+  gap: 50px; /* Gap between columns */
+}
+
+/* Column styling for equal height */
+.map-column,
+.form-column {
+  flex: 1; /* Equal width for both columns */
+  display: flex;
+  flex-direction: column;
+  height: 500px; /* Same height for both columns */
 }
 
 /* Map Column */
 .map-column {
-  flex: 1 1 50%; /* 50% of the container width */
-  height: 100%; /* Full height */
+  position: relative;
 }
 
 .map-column iframe {
-  width: 100%; /* Full width */
-  height: 100%; /* Full height */
+  width: 100%;
+  height: 100%;
   border: none; /* No border */
+  border-radius: 8px; /* Rounded corners */
 }
 
 /* Form Column */
 .form-column {
-  flex: 1 1 40%; /* 40% of the container width */
   background-color: #fff;
-  padding: 20px; /* Increased padding for better form spacing */
+  padding: 10px; /* Decreased padding */
   border-radius: 8px;
   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  justify-content: center; /* Center content vertically */
+  margin-left: 20px; /* Margin left */
+  width: 95%; /* Decrease width */
+  overflow: hidden; /* Prevent overflow */
 }
 
 /* Form Heading */
 .contact-heading {
-  font-size: 1.8rem; /* Larger heading */
-  color: #007bff; /* Blue heading */
-  margin: 15px;
+  font-size: 1.5rem; /* Decreased font size */
+  color: #007bff;
+  margin: 10px 0; /* Decreased margin */
   text-align: center;
   text-transform: uppercase;
   letter-spacing: 1px;
@@ -58,11 +71,12 @@
 .feedback-form {
   display: flex;
   flex-direction: column;
-  gap: 15px; /* Spacing between form elements */
+  gap: 10px; /* Decreased spacing */
+  padding: 10px; /* Added padding */
 }
 
 .feedback-form label {
-  font-size: 1rem;
+  font-size: 1rem; /* Decreased font size */
   color: #333;
   font-weight: bold;
 }
@@ -70,50 +84,65 @@
 .feedback-form input,
 .feedback-form textarea {
   width: 100%; /* Full width for inputs */
-  padding: 12px; /* More padding for better form field appearance */
+  padding: 10px; /* Decreased padding */
   border-radius: 5px;
   border: 1px solid #ccc;
-  font-size: 1rem;
-  background-color: #f9f9f9; /* Light background for form fields */
-  transition: border-color 0.3s;
+  font-size: 1rem; /* Decreased font size */
+  background-color: #f9f9f9;
+  transition: border-color 0.3s, box-shadow 0.3s;
 }
 
 .feedback-form input:focus,
 .feedback-form textarea:focus {
   border-color: #007bff; /* Change border color when focused */
+  box-shadow: 0 0 10px rgba(0, 123, 255, 0.25); /* Add shadow on focus */
 }
 
 .feedback-form textarea {
-  resize: vertical; /* Allow vertical resizing */
-  min-height: 120px;
+  resize: vertical;
+  min-height: 80px; /* Reduced height */
 }
 
 .submit-button {
   background-color: #007bff;
   color: #fff;
   border: none;
-  padding: 12px 15px; /* Bigger padding for better button appearance */
+  padding: 12px 15px; /* Decreased padding */
   border-radius: 5px;
   cursor: pointer;
-  transition: background-color 0.3s;
+  font-size: 1rem; /* Decreased font size */
+  transition: background-color 0.3s, transform 0.3s;
 }
 
 .submit-button:hover {
   background-color: #0056b3;
+  transform: scale(1.05); /* Slight zoom on hover */
 }
 
 /* Media Queries */
+/* For laptops (width 1024px and above) */
+@media (min-width: 1024px) {
+  .map-column {
+    height: 500px; /* Increase height for larger screens */
+  }
+}
 
 /* For tablets (width less than 1024px) */
 @media (max-width: 1024px) {
-  .map-column {
+  .contact-us-container {
+    flex-direction: column; /* Stack columns on smaller screens */
+  }
+  .map-column,
+  .form-column {
     flex: 1 1 100%; /* Full width on smaller screens */
+    height: auto; /* Adjust height */
+  }
+  .map-column {
     height: 300px; /* Adjust map height */
   }
-
   .form-column {
-    flex: 1 1 100%; /* Full width for form */
-    padding: 20px; /* Adjust padding for smaller screens */
+    margin-left: 0; /* Reset margin */
+    width: 100%; /* Full width */
   }
 }
 
@@ -122,21 +151,17 @@
   .map-column {
     height: 250px; /* Reduce height for smaller screens */
   }
-
   .form-column {
-    padding: 15px; /* Reduce padding */
+    padding: 10px; /* Reduce padding */
   }
-
   .feedback-form label {
-    font-size: 0.95rem; /* Slightly smaller font */
+    font-size: 0.9rem; /* Slightly smaller font */
   }
-
   .feedback-form input,
   .feedback-form textarea {
-    padding: 10px; /* Reduce padding for smaller screens */
-    font-size: 0.95rem; /* Smaller input font */
+    padding: 8px; /* Reduce padding for smaller screens */
+    font-size: 0.9rem; /* Smaller input font */
   }
-
   .submit-button {
     padding: 10px 12px; /* Smaller padding for the button */
   }
@@ -147,16 +172,13 @@
   .map-column {
     height: 200px; /* Further reduce map height */
   }
-
   .feedback-form label {
-    font-size: 0.9rem; /* Smaller font */
+    font-size: 0.8rem; /* Smaller font */
   }
-
   .feedback-form input,
   .feedback-form textarea {
-    font-size: 0.9rem; /* Adjust input font */
+    font-size: 0.8rem; /* Adjust input font */
   }
-
   .submit-button {
     padding: 8px 10px; /* Smaller padding for mobile button */
   }

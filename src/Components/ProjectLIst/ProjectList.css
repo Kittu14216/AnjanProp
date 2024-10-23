@@ -1,0 +1,75 @@
+.projects-list {
+  padding: 20px; /* Add padding for spacing */
+  background-color: #e0e0e0; /* Light grey background color */
+  border-radius: 10px; /* Rounded corners */
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Subtle shadow for depth */
+  max-width: 1200px;
+  margin: 0px auto; /* Center the container */
+}
+
+.projects-list h2 {
+  background-color: rgb(0, 37, 59);
+  padding: 3px;
+  margin-top: 0; /* Remove default top margin */
+  font-size: 2.5rem; /* Font size for the heading */
+  color: #ffffff; /* Text color for the heading */
+  text-align: center; /* Center the heading */
+}
+
+ul {
+  list-style: none;
+  padding: 0;
+  max-height: 600px; /* Adjust this value as needed */
+  overflow-y: auto; /* Add scroll effect */
+}
+
+.project-item {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr; /* 4 columns grid */
+  gap: 20px; /* Adjust the gap as needed */
+  align-items: center;
+  background: #d5e3e8;
+  padding: 15px;
+  margin-bottom: 10px;
+  border-radius: 8px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  transition: background-color 0.3s ease;
+}
+
+.project-item:hover {
+  background-color: #f0f8ff;
+}
+
+.project-info {
+  display: contents; /* Allow elements to use full grid */
+}
+
+.project-info h3,
+.project-info p {
+  margin: 0;
+  font-size: 1.2rem;
+}
+
+.explore-link {
+  background-color: #ff7300;
+  color: #fff;
+  padding: 10px 15px;
+  border-radius: 5px;
+  text-decoration: none;
+  transition: background-color 0.3s ease;
+}
+
+.explore-link:hover {
+  background-color: #ec8a0b;
+}
+
+@media (max-width: 768px) {
+  .project-item {
+    grid-template-columns: 1fr;
+    text-align: center;
+  }
+
+  .explore-link {
+    justify-self: center;
+  }
+}
