@@ -51,7 +51,7 @@
 @media (max-width: 768px) {
   .about-us-heading {
     font-size: 1.5rem;
-    min-width: 400px;
+    min-width: 350px;
     /* Slightly smaller font for mobile */
   }
 
