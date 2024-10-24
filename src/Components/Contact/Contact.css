@@ -119,8 +119,11 @@
 }
 
 .submit-button:hover {
-  background-color: #0056b3;
+  background-color: #12283f;
   transform: scale(1.05); /* Slight zoom on hover */
+}
+.submit-button:active {
+  background-color: #007bff;
 }
 
 /* Media Queries */
