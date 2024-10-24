@@ -49,7 +49,7 @@
 @media (max-width: 768px) {
   .about-us-heading {
     font-size: 1.5rem;
-    min-width: 350px;
+    width: 100%;
     /* Slightly smaller font for mobile */
   }
 
