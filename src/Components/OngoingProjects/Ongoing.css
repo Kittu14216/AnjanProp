@@ -1,6 +1,6 @@
 /* Ongoing Section Styling */
 .ongoing-section {
-  padding: 5px 20px;
+  padding: 20px 20px;
   background-color: rgba(20, 27, 39, 0.5);
 }
 
@@ -13,7 +13,8 @@
 /* Project Details */
 .ongoing-details {
   flex: 1 1 60%;
-  padding: 15px;
+  padding: 10px;
+  margin: 0px 5px;
   background-color: rgba(241, 241, 241, 0.957);
   border-radius: 8px;
   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);

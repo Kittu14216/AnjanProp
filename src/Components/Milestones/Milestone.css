@@ -1,6 +1,6 @@
 /* Milestones Section Styling */
 .milestones-section {
-  padding: 40px 20px;
+  padding: 20px 20px;
   text-align: center;
   background-color: rgba(
     20,
@@ -31,9 +31,10 @@
 
 /* Individual Milestone Box */
 .milestone-box {
-  background-color: #111d60;
+  background-color: #021932a5;
   padding: 20px;
   border-radius: 8px;
+  min-height: 120px;
   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
   flex: 1 1 calc(33.33% - 40px); /* 3 columns for larger screens */
   min-width: 250px; /* Minimum box width */
@@ -48,12 +49,13 @@
 .milestone-year {
   font-size: 1.5rem;
   font-weight: bold;
-  color: #cdcfd2; /* Color for the year */
+  color: #f46e00; /* Color for the year */
 }
 
 .milestone-description {
-  font-size: 1rem;
-  color: #d2d0d0;
+  font-size: 1.1rem;
+  font-weight: bold;
+  color: #ffd900e9;
   margin-top: 10px;
 }
 

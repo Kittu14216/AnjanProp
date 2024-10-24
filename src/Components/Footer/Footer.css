@@ -1,8 +1,11 @@
 .footer-container {
-  background-color: rgb(19, 19, 37);
+  background-color: rgba(18, 18, 47, 0.927);
 }
 .footer-container p {
   color: white;
+}
+.footer-column {
+  padding: 10px;
 }
 .footer-container p a {
   text-decoration: none;
@@ -18,7 +21,7 @@
 }
 
 .footer-services-column h3 {
-  font-size: 1.2rem; /* Adjust heading size for service sections */
+  font-size: 1.1rem; /* Adjust heading size for service sections */
   /* margin-top: 15px; */
   /* Space above the heading */
   margin-bottom: 10px; /* Space below the heading */
@@ -36,13 +39,15 @@
 }
 
 .footer-heading {
-  font-size: 1.8rem; /* Increase font size for main heading */
+  font-size: 1.5rem; /* Increase font size for main heading */
   /* margin-bottom: 15px; */
   background-color: #edeff1; /* Blue background */
   font-weight: bold;
   color: #1a0a0a; /* White text color */
   padding: 8px 15px; /* Padding around the heading */
-  border-radius: 5px; /* Rounded corners */
+  border-radius: 5px;
+  margin: 10px 10px 30px 10px;
+  /* Rounded corners */
   text-align: center; /* Center the text */
   box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2); /* Subtle shadow effect */
 }

@@ -1,17 +1,19 @@
 .projects-list {
-  padding: 20px; /* Add padding for spacing */
+  padding: 20px 20px 2px 20px; /* Add padding for spacing */
   background-color: #e0e0e0; /* Light grey background color */
-  border-radius: 10px; /* Rounded corners */
+  border-radius: 0px; /* Rounded corners */
   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Subtle shadow for depth */
-  max-width: 1200px;
-  margin: 0px auto; /* Center the container */
+  max-width: 1300px;
+  margin: 0px 0px;
+  /* Center the container */
 }
 
 .projects-list h2 {
   background-color: rgb(0, 37, 59);
-  padding: 3px;
+  padding: 8px;
+  border-radius: 10px;
   margin-top: 0; /* Remove default top margin */
-  font-size: 2.5rem; /* Font size for the heading */
+  font-size: 2.2rem; /* Font size for the heading */
   color: #ffffff; /* Text color for the heading */
   text-align: center; /* Center the heading */
 }

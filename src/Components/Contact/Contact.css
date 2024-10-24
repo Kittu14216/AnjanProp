@@ -1,6 +1,6 @@
 /* General container styling */
 .contact-us-section {
-  padding: 40px 20px;
+  padding: 0px 20px;
   background-color: rgba(20, 27, 39, 0.5);
   overflow: hidden; /* Prevent horizontal scrolling */
   /* margin: 40px 0;  */
@@ -13,12 +13,13 @@
   color: black;
   font-weight: bold;
   border-radius: 5px;
-  margin: 40px 0;
+  margin: 20px 5px;
   padding: 8px;
 }
 
 /* Contact Us Container */
 .contact-us-container {
+  padding-bottom: 20px;
   display: flex;
   justify-content: space-between;
   gap: 50px; /* Gap between columns */
@@ -36,6 +37,7 @@
 /* Map Column */
 .map-column {
   position: relative;
+  margin-left: 10px;
 }
 
 .map-column iframe {
@@ -52,7 +54,9 @@
   border-radius: 8px;
   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
   justify-content: center; /* Center content vertically */
-  margin-left: 20px; /* Margin left */
+  margin-left: 5px;
+  margin-right: 15px;
+  /* Margin left */
   width: 95%; /* Decrease width */
   overflow: hidden; /* Prevent overflow */
 }

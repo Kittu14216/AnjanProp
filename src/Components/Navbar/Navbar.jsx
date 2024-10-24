@@ -8,7 +8,7 @@ import "./Navbar.css"; // Custom CSS for styling
 
 const NavContainer = () => {
   return (
-    <Navbar bg="dark" variant="dark" expand="lg" fixed="top">
+    <Navbar variant="dark" expand="lg" fixed="top">
       <Container>
         {/* Brand Logo */}
         <Navbar.Brand href="#logo">

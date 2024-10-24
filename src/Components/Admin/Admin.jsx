@@ -27,15 +27,19 @@ const Admin = () => {
   const handleImageChange = (e) => {
     if (e.target.files[0]) {
       setImage(e.target.files[0]);
+      console.log("Image selected:", e.target.files[0]);
     }
   };
 
   const handleSubmit = async (e) => {
     e.preventDefault();
+    console.log("Form submitted");
     if (image) {
+      console.log("Starting upload...");
       setUploading(true);
       const storageRef = ref(storage, `projects/${image.name}`);
       const uploadTask = uploadBytesResumable(storageRef, image);
+
       uploadTask.on(
         "state_changed",
         (snapshot) => {
@@ -50,6 +54,7 @@ const Admin = () => {
         },
         async () => {
           const downloadURL = await getDownloadURL(uploadTask.snapshot.ref);
+          console.log("Upload complete, URL:", downloadURL);
           await addDoc(collection(db, "projects"), {
             ...project,
             imageUrl: downloadURL,
@@ -68,9 +73,9 @@ const Admin = () => {
 
   return (
     <form onSubmit={handleSubmit} className="add-project-form">
-      <h2>Add New Project</h2>
+      <h2 className="mainheading">Add New Project</h2>
       <div className="form-group">
-        <label>Title:</label>
+        <label className="subheading">Title:</label>
         <input
           type="text"
           name="title"
@@ -102,7 +107,6 @@ const Admin = () => {
           required
         />
       </div>
-
       <div className="form-group">
         <label>Remarks:</label>
         <input

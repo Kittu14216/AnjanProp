@@ -1,15 +1,19 @@
 /* General Styling for Navbar */
 .navbar {
+  position: fixed; /* Fixes the navbar at the top */
+  top: 0;
+  width: 100%;
   background-color: rgba(
-    20,
-    27,
-    39,
+    13,
+    23,
+    57,
     0.95
   ); /* Slightly transparent dark background */
   display: flex;
   justify-content: space-between; /* Ensures items are evenly spaced */
   align-items: center; /* Vertically centers items */
   padding: 10px 20px; /* Adjust as needed */
+  z-index: 1000; /* Ensures the navbar is above other elements */
 }
 
 /* Styling for navbar items */
@@ -46,7 +50,6 @@
     flex-direction: column; /* Stack items vertically on mobile view */
     padding: 15px 0; /* Adjust padding for mobile view */
   }
-
   .nav-item {
     padding: 8px 10px;
     font-size: 14px; /* Smaller text for mobile */

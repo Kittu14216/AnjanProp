@@ -1,8 +1,8 @@
 /* General container styling */
 .vision-mission-section {
-  padding: 40px 20px;
+  padding: 20px 20px;
   text-align: center;
-  background-color: rgba(27, 40, 53, 0.5);
+  background-color: rgba(12, 27, 42, 0.5);
 }
 
 .vision-mission-section h2 {
@@ -24,7 +24,7 @@
 
 /* Box styling for Mission, Vision, and Incorporation Certificate */
 .vision-mission-box {
-  background-color: #d2d6e4;
+  background-color: #c1c4c6c3;
   padding: 20px;
   border-radius: 8px;
   box-shadow: 0 4px 8px rgba(162, 161, 161, 0.1);
@@ -42,7 +42,7 @@
   font-size: 1rem;
   font-weight: bold;
   color: #ffffff;
-  background-color: #ff4800; /* Tab background color */
+  background-color: #611d02; /* Tab background color */
   padding: 10px 15px; /* Padding for the tab look */
   border-radius: 8px 8px 0 0; /* Rounded top corners */
   margin: 0; /* Remove default margin */
@@ -54,10 +54,10 @@
 }
 
 .vision-mission-box p {
-  font-size: 1rem;
+  font-size: 1.1rem;
   color: #0f0505;
   margin-top: 10px;
-  font-family: Arial, Helvetica, sans-serif;
+  /* font-family: Arial, Helvetica, sans-serif; */
 }
 
 .icon {
